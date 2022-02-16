@@ -1,0 +1,214 @@
+*{
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #3d3d39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner img {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity:0.25
+}
+
+.banner .content {
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    color: #fff;
+    font-size:60px;
+}
+
+.banner .content p {
+    color: #fff;
+    font-size:18px;
+}
+
+.banner header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding:40px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+}
+
+.banner header .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size:24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing:1px;
+}
+
+.banner header .toggle {
+    position: relative;
+    width: 36px;
+    height:24px;
+    padding: 20px;
+    background: url(../img/menu.png);
+    background-size:cover;
+    cursor: pointer;
+    filter: invert(1)
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+.about .contentBx {
+    background: #162c3b;
+    padding: 100px;
+    width: 50%;
+}
+
+.heading {
+    color: #fff;
+    font-size:30px;
+    font-weight: 600;
+    letter-spacing:1px;
+    margin-bottom:10px;
+}
+
+.text {
+    color: #fff;
+    font-size:16px;
+    font-weight: 300;
+    letter-spacing:1px;
+}
+
+.about .imgBx {
+    background: url(../img/window.jpg);
+    width: 50%;
+    background-size:cover;
+    background-position: center;
+}
+
+.services {
+    background: #12222d;
+    padding:100px;
+    text-align: center;
+}
+
+.services .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.services .container .serviceBx{
+    position: relative;
+    background: #fff;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .container .serviceBx img{
+    width: 80px;
+    transition: 0.2s;
+    
+    
+}
+
+.services .container .serviceBx img:hover{
+    width: 100px;
+    transform: scale(1.5);
+    transition: 0.2s;
+    
+}
+
+.services .container .serviceBx h2 {
+    font-weight: 500;
+    font-size:20px;
+    margin-top:25px;   
+    letter-spacing:1px;
+}
+
+.tec {
+    background: #3f8ffc;
+    width: 100%;
+    padding: 100px;
+    padding-top: 300px;
+    margin-top: -300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tec .contentBx {
+    max-width: 800px;
+}
+
+.tec .imgBx {
+    max-width: 250px;
+}
+
+.tec .imgBx img{
+    max-width: 100%;
+}
+
+.client {
+    background: #162c3b;
+    padding:100px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.client .imgBx {
+    
+    display: flex;
+    justify-content: space-between;
+    min-height: 160px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:40px
+}
+
+
+
+.client .imgBx img{
+    max-width:200px;
+    margin: 20px;
+    
+    opacity: pointer;
+    filter: blur(0.5px);
+    cursor: pointer;
+    
+}
+
+.client .imgBx img:hover{
+    filter: blur(0px);
+    filter: blur(1.5px);
+    
+}
